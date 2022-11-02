@@ -30,3 +30,58 @@ VALUES ('Sueli Flávia Marcela Baptista', 'Conjunto Tucumã' , 1212.0, '2022-06-
 
 INSERT INTO tb_vendedores (nome, bairro,comissao,data_admissao,ferias) 
 VALUES ('Clara Giovana Isabella das Neves', 'Novo Horizonte' , 1212.0, '2022-06-01', '2023-06-01');
+
+--- Insert into TB_PRODUTOS
+
+INSERT INTO tb_produtos (descricao, sabor,tamanho,embalagem,preco)
+VALUES ('Suco', 'Limão', '1L', 'Refresco', 3.50);
+
+INSERT INTO tb_produtos (descricao, sabor,tamanho,embalagem,preco)
+VALUES ('Café', 'cafe', '1KG', 'Pilão', 10.50);
+
+INSERT INTO tb_produtos (descricao, sabor,tamanho,embalagem,preco)
+VALUES ('refrigerante', 'Cola', '2L', 'Coca-cola', 5.50);
+
+INSERT INTO tb_produtos (descricao, sabor,tamanho,embalagem,preco)
+VALUES ('refrigerante', 'guaraná', '2L', 'guaraná', 3.50);
+
+INSERT INTO tb_produtos (descricao, sabor,tamanho,embalagem,preco)
+VALUES ('Agua', 'mineral', '1L', 'indaiar', 2.00);
+
+--- Insert into TB_VENDAS
+
+INSERT INTO tb_vendas (data_now, id_cliente, id_matricula_vendendo, imposto)
+VALUES ('2022-11-02', 3, 1, 100.0)
+
+INSERT INTO tb_vendas (data_now, id_cliente, id_matricula_vendendo, imposto)
+VALUES ('2022-11-02', 4, 2, 1000.0)
+
+INSERT INTO tb_vendas (data_now, id_cliente, id_matricula_vendendo, imposto)
+VALUES ('2022-11-02', 5, 3, 50.0)
+
+INSERT INTO tb_vendas (data_now, id_cliente, id_matricula_vendendo, imposto)
+VALUES ('2022-11-02', 6, 4, 200.0)
+
+INSERT INTO tb_vendas (data_now, id_cliente, id_matricula_vendendo, imposto)
+VALUES ('2022-11-02', 7, 5, 12.0)
+
+--- Insert into tb_itens_vendidos 
+
+INSERT INTO tb_itens_vendidos (id_vendas, id_codigo_produto, quantidade, preco)
+VALUES (1, 1, 100, 3.50);
+
+INSERT INTO tb_itens_vendidos (id_vendas, id_codigo_produto, quantidade, preco)
+VALUES (2, 5, 1000, 2.0);
+
+INSERT INTO tb_itens_vendidos (id_vendas, id_codigo_produto, quantidade, preco)
+VALUES (3, 2, 400, 10.50);
+
+INSERT INTO tb_itens_vendidos (id_vendas, id_codigo_produto, quantidade, preco)
+VALUES (4, 3, 200, 5.50);
+
+INSERT INTO tb_itens_vendidos (id_vendas, id_codigo_produto, quantidade, preco)
+VALUES (5, 4, 50, 3.50);
+
+
+
+
